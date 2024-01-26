@@ -14,4 +14,25 @@ ul li a {
 }
 .hero_section {
   display: flex;
+  flex-direction: column;
+}
+.heroPicture {
+  width: 50%;
+  height: 200px;
+  background-color: grey;
+  margin: 20px;
+}
+.enroll_btn {
+  background-color: #3382f6;
+  color: #f9faf8;
+  border-radius: 15px;
+  height: 36px;
+  width: 15%;
+}
+.hero_main_text {
+  font-size: 48px;
+  font-weight: bolder;
+}
+.hero_secondary_text {
+  font-size: 18px;
 }
