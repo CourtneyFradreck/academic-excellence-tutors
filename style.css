@@ -12,9 +12,12 @@ ul li a {
   text-decoration: none;
   color: blue;
 }
-.hero_section {
+.wrapper {
   display: flex;
   flex-direction: column;
+}
+.hero_section {
+  display: flex;
 }
 .heroPicture {
   width: 50%;
