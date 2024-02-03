@@ -43,4 +43,7 @@ ul li a {
 .hero_text {
   width: 50%;
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
