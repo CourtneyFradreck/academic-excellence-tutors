@@ -3,7 +3,7 @@ body {
   color: blue;
 }
 
-ul {
+ul.navbar {
   display: flex;
   list-style-type: none;
   gap: 80px;
