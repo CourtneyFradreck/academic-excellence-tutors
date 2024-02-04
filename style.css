@@ -1,6 +1,18 @@
+:root {
+  --text-color: #33a1fd;
+  --bg-color: #171a21;
+  --accent: #fafaff;
+}
+
 body {
-  background-color: #f2f8fc;
-  color: blue;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+button {
+  border: none;
+  padding: 15px;
+  border-radius: 15px;
 }
 
 ul.navbar {
@@ -10,7 +22,7 @@ ul.navbar {
 }
 ul li a {
   text-decoration: none;
-  color: blue;
+  color: var(--text-color);
 }
 .wrapper {
   display: flex;
@@ -25,8 +37,8 @@ ul li a {
   margin: 20px;
 }
 .enroll_btn {
-  background-color: #3382f6;
-  color: #f9faf8;
+  background-color: var(--accent);
+  color: var(--text-color);
   border-radius: 15px;
   height: 36px;
   width: 25%;
@@ -36,6 +48,7 @@ ul li a {
   font-size: 48px;
   font-weight: bolder;
 }
+
 .hero_secondary_text {
   font-size: 18px;
   margin-top: 10px;
