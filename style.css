@@ -47,3 +47,7 @@ ul li a {
   flex-direction: column;
   justify-content: center;
 }
+.subject_choice_and_school_logo {
+  display: flex;
+  justify-content: center;
+}
