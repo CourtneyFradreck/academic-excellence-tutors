@@ -55,7 +55,7 @@ ul li a {
   margin: 20px;
   background-size: cover;
   background-position: center;
-  background-image: url('images/learner.gif');
+  background-image: url("images/learner.gif");
 }
 .enroll_btn {
   background-color: var(--accent);
