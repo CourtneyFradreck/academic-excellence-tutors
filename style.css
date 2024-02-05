@@ -4,9 +4,17 @@
   --accent: #fafaff;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: var(--bg-color);
+  width: 100%;
+  max-width: 1900px;
   color: var(--text-color);
+  background-color: var(--bg-color);
+  position: relative;
+  margin: 0;
 }
 
 button {
@@ -15,10 +23,17 @@ button {
   border-radius: 15px;
 }
 
+.wrapper {
+  width: 100%;
+}
+nav {
+  width: 100%;
+}
 ul.navbar {
   display: flex;
   list-style-type: none;
-  gap: 80px;
+  width: 100%;
+  justify-content: space-between;
 }
 ul li a {
   text-decoration: none;
@@ -30,11 +45,17 @@ ul li a {
 }
 .hero_section {
   display: flex;
-  height: 500px;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-between;
 }
 .heroPicture {
-  width: 50%;
+  width: 500px;
+  height: 500px;
   margin: 20px;
+  background-size: cover;
+  background-position: center;
+  background-image: url('images/learner.gif');
 }
 .enroll_btn {
   background-color: var(--accent);
@@ -59,6 +80,7 @@ ul li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .subject_choice_and_school_logo {
   display: flex;
@@ -67,4 +89,13 @@ ul li a {
 .middle_section_header {
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (max-width: 1159px) {
+  .hero_text {
+    width: 100%;
+  }
+
+  .heroPicture {
+  }
 }
