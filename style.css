@@ -18,9 +18,17 @@ body {
 }
 
 button {
-  border: none;
-  padding: 15px;
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+  width: 150px;
+  height: 45px;
+  background-color: cyan;
   border-radius: 15px;
+  border-color: aqua;
+  margin-top: 20px;
+}
+button:hover {
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+    0 0 200px cyan;
 }
 
 .wrapper {
@@ -57,14 +65,7 @@ ul li a {
   background-position: center;
   background-image: url("images/learner.gif");
 }
-.enroll_btn {
-  background-color: var(--accent);
-  color: var(--text-color);
-  border-radius: 15px;
-  height: 36px;
-  width: 25%;
-  margin-top: 15px;
-}
+
 .hero_main_text {
   font-size: 48px;
   font-weight: bolder;
