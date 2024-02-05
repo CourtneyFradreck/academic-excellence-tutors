@@ -18,17 +18,18 @@ body {
 }
 
 button {
-  box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+  box-shadow: 0 0 5px var(--text-color), 0 0 25px var(--text-color);
   width: 150px;
   height: 45px;
-  background-color: cyan;
+  background-color: var(--text-color);
   border-radius: 15px;
-  border-color: aqua;
+  border-color: var(--text-color);
   margin-top: 20px;
 }
 button:hover {
-  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
-    0 0 200px cyan;
+  box-shadow: 0 0 5px var(--text-color), 0 0 25px var(--text-color),
+    0 0 50px var(--text-color), 0 0 100px var(--text-color),
+    0 0 200px var(--text-color);
 }
 
 .wrapper {
