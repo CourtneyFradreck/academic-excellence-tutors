@@ -28,8 +28,7 @@ button {
 }
 button:hover {
   box-shadow: 0 0 5px var(--text-color), 0 0 25px var(--text-color),
-    0 0 50px var(--text-color), 0 0 100px var(--text-color),
-    0 0 200px var(--text-color);
+    0 0 50px var(--text-color), 0 0 100px var(--text-color), 0 0 200px var(--text-color);
 }
 
 .wrapper {
@@ -64,7 +63,7 @@ ul li a {
   margin: 20px;
   background-size: cover;
   background-position: center;
-  background-image: url("images/learner.gif");
+  background-image: url('images/learner.gif');
 }
 
 .hero_main_text {
@@ -87,21 +86,36 @@ ul li a {
 .subject_choice_and_school_logo {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 .middle_section_header {
   display: flex;
+  position: relative;
   justify-content: center;
+}
+
+.offered_subjects {
+  width: 100%;
+}
+
+.middle_section {
+  position: relative;
 }
 
 .container {
   display: flex;
   padding: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   background-color: var(--text-color);
 }
 
 .item {
-  flex: 1;
+  width: 200px;
+  height: 200px;
   margin: 10px;
+  border-radius: 15px;
   padding: 10px;
   border: 1px solid var(--bg-color);
   background-color: var(--bg-color);
@@ -112,6 +126,7 @@ ul li a {
     width: 100%;
   }
 
-  .heroPicture {
+  .container {
+    justify-content: center;
   }
 }
