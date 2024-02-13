@@ -118,3 +118,7 @@ button:hover {
     0 0 50px var(--text-color), 0 0 100px var(--text-color),
     0 0 200px var(--text-color);
 }
+.headerSpan {
+  font-size: 12px;
+  font-weight: lighter;
+}
