@@ -9,19 +9,19 @@
   <body>
     <div class="container">
       <header>Registration</header>
-      <form action="#">
+      <form action="#" method="get">
         <div class="form_first">
           <div class="personal_details">
             <span class="title">Personal Details</span>
             <div class="fields">
               <div class="input-field">
-                <label for="name">Full Name</label>
+                <label id="name" for="name">Full Name</label>
                 <input type="text" placeholder="Enter your name" required />
               </div>
 
               <div class="input-field">
                 <label for="name">Date of Birth</label>
-                <input
+                <input id="dob"
                   type="date"
                   placeholder="Enter your date of birth"
                   required
@@ -30,12 +30,12 @@
 
               <div class="input-field">
                 <label for="name">Email</label>
-                <input type="text" placeholder="Enter your email" required />
+                <input id="email" type="text" placeholder="Enter your email" required />
               </div>
 
               <div class="input-field">
                 <label for="name">Mobile Number</label>
-                <input
+                <input id="mobileNumber"
                   type="number"
                   placeholder="Enter mobile number"
                   required
@@ -47,7 +47,7 @@
               </div>
               <div class="input-field">
                 <label for="name">School</label>
-                <input type="text" placeholder="Enter your school" required />
+                <input id="nameOfSchool" type="text" placeholder="Enter your school" required />
               </div>
               <label for="grade">Grade:</label>
               <select id="grade" name="grade" required>
