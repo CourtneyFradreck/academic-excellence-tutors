@@ -52,6 +52,17 @@ ul li a {
   display: flex;
   flex-direction: column;
 }
+.menu_link::after {
+  content: "";
+  width: 0;
+  background-color: var(--text-color);
+  display: block;
+  height: 3px;
+  transition: width 0.3s ease;
+}
+.menu_link:hover::after {
+  width: 100%;
+}
 .hero_section {
   display: flex;
   flex-wrap: wrap;
