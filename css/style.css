@@ -131,3 +131,17 @@ ul li a {
     justify-content: center;
   }
 }
+footer {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+.thePricingSection {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.priceList {
+  font-size: 28px;
+}
