@@ -12,7 +12,7 @@ body {
   width: 100%;
   max-width: 1900px;
   color: var(--text-color);
-  background-color: var(--bg-color);
+  background-color: var(--accent);
   position: relative;
   margin: 0;
 }
@@ -34,6 +34,7 @@ button:hover {
 
 .wrapper {
   width: 100%;
+  background-color: var(--bg-color);
 }
 nav {
   width: 100%;
