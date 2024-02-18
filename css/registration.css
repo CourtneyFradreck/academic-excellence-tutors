@@ -72,6 +72,7 @@ form .fields .input-field {
   width: calc(100% / 3 - 15px);
   flex-direction: column;
   margin: 4px 0;
+  flex-wrap: wrap;
 }
 .input-field label {
   font-size: 12px;
@@ -121,4 +122,9 @@ button:hover {
 .headerSpan {
   font-size: 12px;
   font-weight: lighter;
+}
+@media only screen and (max-width: 700px) {
+  .container form .fields {
+    display: block;
+  }
 }
