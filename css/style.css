@@ -121,7 +121,9 @@ ul li a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--text-color);
+  background-color: var(
+    --text-color
+  ); /*to be removed as soon as they're pictures added*/
 }
 
 .item {
