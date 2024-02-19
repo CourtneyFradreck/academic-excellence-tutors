@@ -123,8 +123,17 @@ button:hover {
   font-size: 12px;
   font-weight: lighter;
 }
+.input-field input {
+  padding: 10px;
+}
 @media only screen and (max-width: 700px) {
   .container form .fields {
     display: block;
+  }
+  form .fields .input-field {
+    width: 100%;
+  }
+  .input-field input {
+    padding: 10px;
   }
 }
