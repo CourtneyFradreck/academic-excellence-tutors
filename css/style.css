@@ -28,8 +28,7 @@ button {
 }
 button:hover {
   box-shadow: 0 0 5px var(--text-color), 0 0 25px var(--text-color),
-    0 0 50px var(--text-color), 0 0 100px var(--text-color),
-    0 0 200px var(--text-color);
+    0 0 50px var(--text-color), 0 0 100px var(--text-color), 0 0 200px var(--text-color);
 }
 
 .wrapper {
@@ -54,7 +53,7 @@ ul li a {
   flex-direction: column;
 }
 .menu_link::after {
-  content: "";
+  content: '';
   width: 0;
   background-color: var(--text-color);
   display: block;
@@ -76,7 +75,7 @@ ul li a {
   margin: 20px;
   background-size: cover;
   background-position: center;
-  background-image: url("../images/learner.gif");
+  background-image: url('../images/learner.gif');
 }
 
 .hero_main_text {
@@ -121,9 +120,7 @@ ul li a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background-color: var(
-    --text-color
-  ); /*to be removed as soon as they're pictures added*/
+  background-color: var(--text-color); /*to be removed as soon as they're pictures added*/
 }
 
 .item {
@@ -154,8 +151,8 @@ body div.joinUs button {
   margin-top: 20px;
 }
 body div.joinUs button:hover {
-  box-shadow: 0 0 5px var(--accent), 0 0 25px var(--accent),
-    0 0 50px var(--accent), 0 0 100px var(--accent), 0 0 200px var(--accent);
+  box-shadow: 0 0 5px var(--accent), 0 0 25px var(--accent), 0 0 50px var(--accent),
+    0 0 100px var(--accent), 0 0 200px var(--accent);
 }
 @media only screen and (max-width: 1159px) {
   .hero_text {
@@ -173,7 +170,7 @@ footer {
   height: 100px;
   background-color: #1f2937;
   color: #fff;
-  font-family: "Roboto", arial;
+  font-family: 'Roboto', arial;
 }
 .thePricingSection {
   margin: 20px;
@@ -181,6 +178,17 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
 }
-.priceList {
-  font-size: 28px;
+
+#plans {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.plan {
+  background-color: var(--bg-color);
+  padding: 10px;
+  border-radius: 15px;
+  width: 300px;
+  flex-wrap: wrap;
 }
