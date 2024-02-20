@@ -1,7 +1,14 @@
 :root {
-  --text-color: #33a1fd;
+  --text-color: #2c8cdb;
   --bg-color: #171a21;
   --accent: #fafaff;
+}
+
+html {
+  font-family: 'Rubik', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 * {
@@ -15,6 +22,7 @@ body {
   background-color: var(--accent);
   position: relative;
   margin: 0;
+  background-color: var(--bg-color);
 }
 
 button {
@@ -23,8 +31,10 @@ button {
   height: 45px;
   background-color: var(--text-color);
   border-radius: 15px;
-  border-color: var(--text-color);
   margin-top: 20px;
+  border: none;
+  outline: none;
+  font-weight: bold;
 }
 button:hover {
   box-shadow: 0 0 5px var(--text-color), 0 0 25px var(--text-color),
@@ -32,22 +42,38 @@ button:hover {
 }
 
 .wrapper {
-  width: 100%;
-  background-color: var(--bg-color);
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
 }
 nav {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
+
 ul.navbar {
   display: flex;
   list-style-type: none;
-  width: 100%;
-  justify-content: space-between;
+  gap: 30px;
+  width: max-content;
 }
+
 ul li a {
   text-decoration: none;
   color: var(--text-color);
 }
+
+#logo {
+  background-image: url('../images/AET\ Logo.jpg');
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -70,8 +96,8 @@ ul li a {
   justify-content: space-between;
 }
 .heroPicture {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   margin: 20px;
   background-size: cover;
   background-position: center;
@@ -112,6 +138,9 @@ ul li a {
 
 .middle_section {
   position: relative;
+  width: 100%;
+  background-color: var(--text-color);
+  color: var(--accent);
 }
 
 .container {
@@ -124,8 +153,8 @@ ul li a {
 }
 
 .item {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   margin: 10px;
   border-radius: 15px;
   padding: 10px;
@@ -141,6 +170,7 @@ ul li a {
   padding: 10px;
   border-radius: 9px;
 }
+
 body div.joinUs button {
   box-shadow: 0 0 5px var(--text-color), 0 0 25px var(--text-color);
   width: 150px;
@@ -150,6 +180,7 @@ body div.joinUs button {
   border-color: var(--accent);
   margin-top: 20px;
 }
+
 body div.joinUs button:hover {
   box-shadow: 0 0 5px var(--accent), 0 0 25px var(--accent), 0 0 50px var(--accent),
     0 0 100px var(--accent), 0 0 200px var(--accent);
@@ -163,6 +194,7 @@ body div.joinUs button:hover {
     justify-content: center;
   }
 }
+
 footer {
   display: flex;
   justify-content: center;
@@ -183,12 +215,18 @@ footer {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+  gap: 15px;
 }
 
 .plan {
-  background-color: var(--bg-color);
+  color: white;
+  background-color: var(--text-color);
   padding: 10px;
   border-radius: 15px;
   width: 300px;
   flex-wrap: wrap;
+}
+
+.thePricingSection > p {
+  text-align: center;
 }
