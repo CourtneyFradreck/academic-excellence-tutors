@@ -7,154 +7,138 @@
     <title>enrollmentform</title>
   </head>
   <body>
-    <nav>
-      <div id="logo"></div>
-      <ul class="navbar">
-        <li><a href="#home" class="menu_link">Home</a></li>
-        <li><a href="#aboutus" class="menu_link">About Us</a></li>
-        <li><a href="#academy" class="menu_link">Academy</a></li>
-        <li><a href="#contact" class="menu_link">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="container">
-      <form action="#" method="get">
-        <div class="form_first">
-          <div class="personal_details">
-            <span class="title">Personal Details</span>
-            <div class="fields">
-              <div class="input-field">
-                <label id="name" for="name">Full Name</label>
-                <input type="text" placeholder="Enter your name" required />
-              </div>
+    <div class="wrapper">
+      <nav>
+        <div id="logo"></div>
+        <ul class="navbar">
+          <li><a href="#home" class="menu_link">Home</a></li>
+          <li><a href="#aboutus" class="menu_link">About Us</a></li>
+          <li><a href="#academy" class="menu_link">Academy</a></li>
+          <li><a href="#contact" class="menu_link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="container">
+        <form action="#" method="get">
+          <div class="form_first">
+            <div class="personal_details">
+              <span class="title">Personal Details</span>
+              <div class="fields">
+                <div class="input-field">
+                  <label id="name" for="name">Full Name</label>
+                  <input type="text" placeholder="Enter your name" required />
+                </div>
 
-              <div class="input-field">
-                <label for="dob">Date of Birth</label>
-                <input
-                  id="dob"
-                  type="date"
-                  placeholder="Enter your date of birth"
-                  required
-                />
-              </div>
+                <div class="input-field">
+                  <label for="dob">Date of Birth</label>
+                  <input
+                    id="dob"
+                    type="date"
+                    placeholder="Enter your date of birth"
+                    required
+                  />
+                </div>
 
-              <div class="input-field">
-                <label for="email">Email</label>
-                <input
-                  id="email"
-                  type="text"
-                  placeholder="Enter your email"
-                  required
-                />
-              </div>
+                <div class="input-field">
+                  <label for="email">Email</label>
+                  <input id="email" type="text" placeholder="Enter your email" required />
+                </div>
 
-              <div class="input-field">
-                <label for="mobileNumber">Mobile Number</label>
-                <input
-                  id="mobileNumber"
-                  type="number"
-                  placeholder="Enter mobile number"
-                  required
-                />
-              </div>
-              <div class="input-field">
-                <label for="gender">Gender</label>
-                <input
-                  id="gender"
-                  type="text"
-                  placeholder="Enter gender"
-                  required
-                />
-              </div>
-              <div class="input-field">
-                <label for="nameOfSchool">School</label>
-                <input
-                  id="nameOfSchool"
-                  type="text"
-                  placeholder="Enter your school"
-                  required
-                />
-              </div>
-              <label for="grade">Grade:</label>
-              <select id="grade" name="grade" required>
-                <option value="">Select your Grade</option>
-                <option value="10">Grade 10</option>
-                <option value="11">Grade 11</option>
-                <option value="12">Grade 12</option>
-              </select>
-            </div>
-          </div>
-          <div class="personal_details">
-            <header>
-              Next of Kin
-              <span class="headerSpan"
-                >Fill out at least one field in this section</span
-              >
-            </header>
-
-            <div class="fields">
-              <div class="input-field">
-                <label for="motherName">Mother's Name</label>
-                <input
-                  id="motherName"
-                  type="text"
-                  placeholder="Enter mother's name"
-                />
-              </div>
-
-              <div class="input-field">
-                <label for="fatherName">Father's Name</label>
-                <input
-                  id="fatherName"
-                  type="text"
-                  placeholder="Enter father's name"
-                />
-              </div>
-
-              <div class="input-field">
-                <label for="guardianName">Guardian's Name</label>
-                <input
-                  id="guardianName"
-                  type="text"
-                  placeholder="Enter Guardian name"
-                />
-              </div>
-
-              <div class="input-field">
-                <label for="motherNumber">Mobile Number (Mother)</label>
-                <input
-                  id="motherNumber"
-                  type="number"
-                  placeholder="Enter mother's number"
-                />
-              </div>
-              <div class="input-field">
-                <label for="fatherNumber">Mobile Number (Father)</label>
-                <input
-                  id="fatherNumber"
-                  type="number"
-                  placeholder="Enter Father's number"
-                />
-              </div>
-              <div class="input-field">
-                <label for="guardianNumber">Mobile Number (Guardian)</label>
-                <input
-                  id="guardianNumber"
-                  type="number"
-                  placeholder="Enter Guardian's number"
-                />
+                <div class="input-field">
+                  <label for="mobileNumber">Mobile Number</label>
+                  <input
+                    id="mobileNumber"
+                    type="number"
+                    placeholder="Enter mobile number"
+                    required
+                  />
+                </div>
+                <div class="input-field">
+                  <label for="gender">Gender</label>
+                  <input id="gender" type="text" placeholder="Enter gender" required />
+                </div>
+                <div class="input-field">
+                  <label for="nameOfSchool">School</label>
+                  <input
+                    id="nameOfSchool"
+                    type="text"
+                    placeholder="Enter your school"
+                    required
+                  />
+                </div>
+                <label for="grade">Grade:</label>
+                <select id="grade" name="grade" required>
+                  <option value="">Select your Grade</option>
+                  <option value="10">Grade 10</option>
+                  <option value="11">Grade 11</option>
+                  <option value="12">Grade 12</option>
+                </select>
               </div>
             </div>
+            <div class="personal_details">
+              <header>
+                Next of Kin
+                <span class="headerSpan"
+                  >Fill out at least one field in this section</span
+                >
+              </header>
+
+              <div class="fields">
+                <div class="input-field">
+                  <label for="motherName">Mother's Name</label>
+                  <input id="motherName" type="text" placeholder="Enter mother's name" />
+                </div>
+
+                <div class="input-field">
+                  <label for="fatherName">Father's Name</label>
+                  <input id="fatherName" type="text" placeholder="Enter father's name" />
+                </div>
+
+                <div class="input-field">
+                  <label for="guardianName">Guardian's Name</label>
+                  <input
+                    id="guardianName"
+                    type="text"
+                    placeholder="Enter Guardian name"
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label for="motherNumber">Mobile Number (Mother)</label>
+                  <input
+                    id="motherNumber"
+                    type="number"
+                    placeholder="Enter mother's number"
+                  />
+                </div>
+                <div class="input-field">
+                  <label for="fatherNumber">Mobile Number (Father)</label>
+                  <input
+                    id="fatherNumber"
+                    type="number"
+                    placeholder="Enter Father's number"
+                  />
+                </div>
+                <div class="input-field">
+                  <label for="guardianNumber">Mobile Number (Guardian)</label>
+                  <input
+                    id="guardianNumber"
+                    type="number"
+                    placeholder="Enter Guardian's number"
+                  />
+                </div>
+              </div>
+            </div>
+            <button class="nextBtn">Next</button>
           </div>
-          <button class="nextBtn">Next</button>
-        </div>
-      </form>
-      <footer>
-        By enrolling into our school, you agree to be bound by our
-        <a href="Ts&Cs.html" target="_blank" rel="noopener noreferrer"
-          >Terms and Conditions</a
-        >.
-      </footer>
+        </form>
+        <footer>
+          By enrolling into our school, you agree to be bound by our
+          <a href="Ts&Cs.html" target="_blank" rel="noopener noreferrer"
+            >Terms and Conditions</a
+          >.
+        </footer>
+      </div>
+      <script src="index.js"></script>
     </div>
-    <script src="index.js"></script>
   </body>
 </html>
