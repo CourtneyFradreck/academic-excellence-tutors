@@ -5,7 +5,7 @@
 }
 
 html {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -38,7 +38,8 @@ button {
 }
 button:hover {
   box-shadow: 0 0 5px var(--text-color), 0 0 25px var(--text-color),
-    0 0 50px var(--text-color), 0 0 100px var(--text-color), 0 0 200px var(--text-color);
+    0 0 50px var(--text-color), 0 0 100px var(--text-color),
+    0 0 200px var(--text-color);
 }
 
 .wrapper {
@@ -65,7 +66,7 @@ ul li a {
 }
 
 #logo {
-  background-image: url('../images/AET\ Logo.jpg');
+  background-image: url("../images/AET\ Logo.jpg");
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -79,7 +80,7 @@ ul li a {
   flex-direction: column;
 }
 .menu_link::after {
-  content: '';
+  content: "";
   width: 0;
   background-color: var(--text-color);
   display: block;
@@ -101,7 +102,7 @@ ul li a {
   margin: 20px;
   background-size: cover;
   background-position: center;
-  background-image: url('../images/learner.gif');
+  background-image: url("../images/learner.gif");
 }
 
 .hero_main_text {
@@ -149,7 +150,9 @@ ul li a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--text-color); /*to be removed as soon as they're pictures added*/
+  background-color: var(
+    --text-color
+  ); /*to be removed as soon as they're pictures added*/
 }
 
 .item {
@@ -182,17 +185,8 @@ body div.joinUs button {
 }
 
 body div.joinUs button:hover {
-  box-shadow: 0 0 5px var(--accent), 0 0 25px var(--accent), 0 0 50px var(--accent),
-    0 0 100px var(--accent), 0 0 200px var(--accent);
-}
-@media only screen and (max-width: 1159px) {
-  .hero_text {
-    width: 100%;
-  }
-
-  .container {
-    justify-content: center;
-  }
+  box-shadow: 0 0 5px var(--accent), 0 0 25px var(--accent),
+    0 0 50px var(--accent), 0 0 100px var(--accent), 0 0 200px var(--accent);
 }
 
 footer {
@@ -202,7 +196,7 @@ footer {
   height: 100px;
   background-color: #1f2937;
   color: #fff;
-  font-family: 'Roboto', arial;
+  font-family: "Roboto", arial;
 }
 .thePricingSection {
   margin: 20px;
@@ -229,4 +223,26 @@ footer {
 
 .thePricingSection > p {
   text-align: center;
+}
+@media only screen and (max-width: 1159px) {
+  .hero_text {
+    width: 100%;
+  }
+
+  .container {
+    justify-content: center;
+  }
+  nav {
+    display: none;
+  }
+  #logo {
+    display: none;
+  }
+  #plans {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .joinUs {
+    margin: 0%;
+  }
 }
