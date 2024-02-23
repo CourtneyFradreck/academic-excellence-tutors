@@ -1,6 +1,6 @@
 :root {
-  --bg-color: #4070f4;
-  --text-color: #33a1fd;
+  --text-color: #2c8cdb;
+  --bg-color: #171a21;
   --accent: #fafaff;
 }
 
@@ -8,7 +8,36 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+ul.navbar {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+  width: max-content;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+#logo {
+  background-image: url('../images/AET\ Logo.jpg');
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body {
@@ -35,7 +64,7 @@ body {
   color: #333;
 }
 .container header ::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -2px;
@@ -92,10 +121,10 @@ form .fields .input-field {
 .input-field input :is(:focus, :valid) {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 13);
 }
-.input-field input [type="date"] {
+.input-field input [type='date'] {
   color: #707070;
 }
-.input-field input [type="date"] :valid {
+.input-field input [type='date'] :valid {
   color: #707070;
 }
 button {
@@ -116,8 +145,7 @@ button {
 }
 button:hover {
   box-shadow: 0 0 5px var(--text-color), 0 0 25px var(--text-color),
-    0 0 50px var(--text-color), 0 0 100px var(--text-color),
-    0 0 200px var(--text-color);
+    0 0 50px var(--text-color), 0 0 100px var(--text-color), 0 0 200px var(--text-color);
 }
 .headerSpan {
   font-size: 12px;
