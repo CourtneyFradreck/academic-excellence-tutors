@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 nav {
@@ -31,7 +31,7 @@ ul li a {
 }
 
 #logo {
-  background-image: url('../images/AET\ Logo.jpg');
+  background-image: url("../images/AET\ Logo.jpg");
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -64,7 +64,7 @@ body {
   color: #333;
 }
 .container header ::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -2px;
@@ -121,10 +121,10 @@ form .fields .input-field {
 .input-field input :is(:focus, :valid) {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 13);
 }
-.input-field input [type='date'] {
+.input-field input [type="date"] {
   color: #707070;
 }
-.input-field input [type='date'] :valid {
+.input-field input [type="date"] :valid {
   color: #707070;
 }
 button {
@@ -145,7 +145,8 @@ button {
 }
 button:hover {
   box-shadow: 0 0 5px var(--text-color), 0 0 25px var(--text-color),
-    0 0 50px var(--text-color), 0 0 100px var(--text-color), 0 0 200px var(--text-color);
+    0 0 50px var(--text-color), 0 0 100px var(--text-color),
+    0 0 200px var(--text-color);
 }
 .headerSpan {
   font-size: 12px;
@@ -157,6 +158,10 @@ button:hover {
 @media only screen and (max-width: 700px) {
   .container form .fields {
     display: block;
+  }
+  .container {
+    margin-left: 10px;
+    margin-right: 10px;
   }
   form .fields .input-field {
     width: 100%;
