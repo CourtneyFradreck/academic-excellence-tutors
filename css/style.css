@@ -228,9 +228,14 @@ footer {
   .hero_text {
     width: 100%;
   }
-
+  .heroPicture {
+    width: 100%;
+    margin: 0;
+  }
   .container {
-    justify-content: center;
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
   }
   nav {
     display: none;
