@@ -35,6 +35,7 @@ button {
   border: none;
   outline: none;
   font-weight: bold;
+  cursor: pointer;
 }
 button:hover {
   box-shadow: 0 0 5px var(--text-color), 0 0 25px var(--text-color),
@@ -182,6 +183,7 @@ body div.joinUs button {
   border-radius: 15px;
   border-color: var(--accent);
   margin-top: 20px;
+  border: #fff;
 }
 
 body div.joinUs button:hover {
