@@ -207,7 +207,7 @@ footer {
   justify-content: center;
 }
 
-#plans {
+#plans{
   display: flex;
   width: 100%;
   justify-content: space-evenly;
@@ -251,9 +251,44 @@ footer {
     display: none;
   }
   #plans {
-    display: flex;
-    flex-wrap: wrap;
+    counter-reset: card;
+    position: relative;
+    display: block;
+    /*padding-bottom: ;*/
   }
+  #plans > .plan + .plan {
+    margin-top: 40vh;
+  }
+  .plan{
+    --offset: 0.5em;
+  color: var(--accent);
+  position: sticky;
+  top: max(16vh, 10em);
+  padding: 2em 1.5em;
+  min-height: 19em;
+  background: var(--text-color);
+  box-shadow: 0 2px 40px var(--bg-color);
+  width: calc(100% - 5 * var(--offset));
+  }
+  .plan:nth-of-type(0) {
+    transform: translate(calc((0 - 1) * var(--offset)), calc((0 - 1) * var(--offset)));
+  }
+  .plan:nth-of-type(1) {
+    transform: translate(calc((1 - 1) * var(--offset)), calc((1 - 1) * var(--offset)));
+  }
+  .plan:nth-of-type(2) {
+    transform: translate(calc((2 - 1) * var(--offset)), calc((2 - 1) * var(--offset)));
+  }
+  .plan:nth-of-type(3) {
+    transform: translate(calc((3 - 1) * var(--offset)), calc((3 - 1) * var(--offset)));
+  }
+  .plan:nth-of-type(4) {
+    transform: translate(calc((4 - 1) * var(--offset)), calc((4 - 1) * var(--offset)));
+  }
+  .plan:nth-of-type(5) {
+    transform: translate(calc((5 - 1) * var(--offset)), calc((5 - 1) * var(--offset)));
+  }
+  
   .joinUs {
     margin: 0%;
   }
