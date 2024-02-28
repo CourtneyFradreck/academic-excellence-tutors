@@ -242,7 +242,10 @@ footer {
     flex-wrap: nowrap;
   }
   nav {
-    display: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
   }
   #logo {
     display: none;
