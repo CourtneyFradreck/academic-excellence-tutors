@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/registration.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <title>enrollmentform</title>
   </head>
   <body>
@@ -21,7 +27,12 @@
         <form action="#" method="get">
           <div class="form_first">
             <div class="personal_details">
-              <span class="title">Personal Details</span>
+              <h1 class="title">Enrollment application</h1>
+              <p>
+                Enroll and start to learn from the best to boost your academic success.
+              </p>
+
+              <h3>Personal details</h3>
               <div class="fields">
                 <div class="input-field">
                   <label id="name" for="name">Full Name</label>
@@ -40,12 +51,7 @@
 
                 <div class="input-field">
                   <label for="email">Email</label>
-                  <input
-                    id="email"
-                    type="text"
-                    placeholder="Enter your email"
-                    required
-                  />
+                  <input id="email" type="text" placeholder="Enter your email" required />
                 </div>
 
                 <div class="input-field">
@@ -57,15 +63,25 @@
                     required
                   />
                 </div>
-                <div class="input-field">
+                <!-- <div class="input-field gender">
                   <label for="gender">Gender</label>
-                  <input
-                    id="gender"
-                    type="text"
-                    placeholder="Enter gender"
-                    required
-                  />
-                </div>
+
+                  <label class="gender">
+                    <input
+                      id="gender"
+                      type="radio"
+                      value="female"
+                      required
+                      name="gender"
+                    />
+                    female
+                  </label>
+
+                  <label class="gender">
+                    <input id="gender" type="radio" value="male" required name="gender" />
+                    male
+                  </label>
+                </div> -->
                 <div class="input-field">
                   <label for="nameOfSchool">School</label>
                   <input
@@ -75,40 +91,24 @@
                     required
                   />
                 </div>
-                <label for="grade">Grade:</label>
+                <!-- <label for="grade">Grade:</label>
                 <select id="grade" name="grade" required>
                   <option value="">Select your Grade</option>
                   <option value="10">Grade 10</option>
                   <option value="11">Grade 11</option>
                   <option value="12">Grade 12</option>
-                </select>
+                </select> -->
               </div>
-            </div>
-            <div class="personal_details">
-              <header>
-                Next of Kin
-                <span class="headerSpan"
-                  >Fill out at least one field in this section</span
-                >
-              </header>
-
+              <h3>Parents/Guardian details</h3>
               <div class="fields">
                 <div class="input-field">
                   <label for="motherName">Mother's Name</label>
-                  <input
-                    id="motherName"
-                    type="text"
-                    placeholder="Enter mother's name"
-                  />
+                  <input id="motherName" type="text" placeholder="Enter mother's name" />
                 </div>
 
                 <div class="input-field">
                   <label for="fatherName">Father's Name</label>
-                  <input
-                    id="fatherName"
-                    type="text"
-                    placeholder="Enter father's name"
-                  />
+                  <input id="fatherName" type="text" placeholder="Enter father's name" />
                 </div>
 
                 <div class="input-field">
@@ -146,6 +146,7 @@
                 </div>
               </div>
             </div>
+
             <button class="nextBtn">Next</button>
           </div>
         </form>
