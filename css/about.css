@@ -52,9 +52,12 @@ ul li a {
   justify-content: center;
   
 }
-.boardOfDirectors{
+.boardMembers{
   display: flex;
   background-color: var(--text-color);
   width: 100px;
   height: 100px;
+}
+img{
+  width: 300px;
 }
