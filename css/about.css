@@ -52,6 +52,17 @@ ul li a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.menu_link::after {
+  content: "";
+  width: 0;
+  background-color: var(--text-color);
+  display: block;
+  height: 3px;
+  transition: width 0.3s ease;
+}
+.menu_link:hover::after {
+  width: 100%;
+}
 .sectionTwo{
   display: flex;
   flex-wrap: wrap;
