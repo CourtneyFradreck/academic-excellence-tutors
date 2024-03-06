@@ -3,7 +3,9 @@
     --bg-color: #171a21;
     --accent: #fafaff;
   }
-  
+  * {
+    box-sizing: border-box;
+  }
   html {
     font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
@@ -14,7 +16,6 @@
     width: 100%;
     max-width: 1900px;
     color: var(--text-color);
-    background-color: var(--accent);
     position: relative;
     margin: 0;
     background-color: var(--bg-color);
