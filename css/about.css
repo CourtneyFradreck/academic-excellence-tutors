@@ -20,6 +20,11 @@
     margin: 0;
     background-color: var(--bg-color);
   }
+  .wrapper {
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+  }
   nav {
   width: 100%;
   display: flex;
