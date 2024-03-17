@@ -166,12 +166,22 @@ button {
   }
   .container {
     padding: 20px;
+    margin-top: 0;
   }
   form .fields .input-field {
     width: 100%;
   }
   .input-field input {
     padding: 10px;
+  }
+  .container form {
+    padding: 20px;
+  }
+  .wrapper{
+    width: 100%;
+  }
+  #logo{
+    display: none;
   }
 }
 
