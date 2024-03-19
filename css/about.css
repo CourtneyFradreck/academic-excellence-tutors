@@ -77,7 +77,32 @@ p{
 .boardMembers{
   display: flex;
   gap: 80px;
+  flex-wrap: wrap;
 }
 img{
   width: 300px;
+}
+.boardMembers img{
+  border: 4px solid #3882F6;
+  border-radius: 15px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #1f2937;
+  color: #fff;
+  font-family: "Roboto", arial;
+}
+@media only screen and (max-width: 700px) {
+  #logo{
+    display: none;
+  }
+  .boardMembers{
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  
 }
