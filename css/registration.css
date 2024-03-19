@@ -48,7 +48,7 @@ ul li a {
   background-size: cover;
 }
 .menu_link::after {
-  content: "";
+  content: '';
   width: 0;
   background-color: var(--text-color);
   display: block;
@@ -177,19 +177,17 @@ button {
   .container form {
     padding: 20px;
   }
-  .wrapper{
+  .wrapper {
     width: 100%;
   }
-  #logo{
+  #logo {
     display: none;
   }
 }
 
 .gender {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .personal_details > p {
@@ -207,4 +205,15 @@ footer {
 
 h1 {
   color: var(--text-color);
+}
+
+.genders {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#genders {
+  display: flex;
+  gap: 10px;
 }
