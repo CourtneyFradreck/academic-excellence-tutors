@@ -88,14 +88,23 @@
 #stuff{
   font-size: 32px;
 }
+.second{
+  display: flex;
+  gap: 125px;
+}
+.sub_choices{
+  width: 40%;
+}
+.awards{
+  width: 45%;
+}
 
 
 
 
 
 
-
-
+/*must do the responsiveness*/
 
 
 
