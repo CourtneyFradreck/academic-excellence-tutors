@@ -66,6 +66,13 @@
   .menu_link:hover::after {
     width: 100%;
   }
+.hero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
   footer {
     display: flex;
     justify-content: center;
