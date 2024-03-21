@@ -66,46 +66,12 @@
   .menu_link:hover::after {
     width: 100%;
   }
-  /********** Popular Courses CSS Starts **********/  
-.bg-lightgrey {
-  background-color:#f7f7f7;
-}
-.course-list {
-  text-align: center;
-  margin-bottom: 20px;
-  padding: 20px 0px;
-  width: 90%;
-  float: left;
-}
-.course-list i {
-  font-size:20px;
-}
-.popular-course h2 {
-  color: #064727;
-  font-size: 28px;
-}
-.popular-course p {
-  font-size: 14px;
-  margin-top: 10px;
-  line-height: 25px;
-  font-weight: 400;
-}
-.popular-course a {
-  text-decoration: none;
-  color: #064727;
-  float: left;
-  margin-top: 20px;
-}
-.bg-yellow {
-  background:#ffc252 
-}
-.bg-blue {
-  background: #add8e6;
-}
-.bg-green {
-  background: #90ee90;
-}
-.bg-grey {
-  background: #d3d3d3;
-}
-/********** Popular Courses CSS Ends **********/
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #1f2937;
+    color: #fff;
+    font-family: "Roboto", arial;
+  }
