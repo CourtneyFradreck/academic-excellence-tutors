@@ -66,3 +66,26 @@
   .menu_link:hover::after {
     width: 100%;
   }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+input, textarea {
+  outline: none;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 15px;
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--main-color);
+  border: 2px solid var(--text-color);
+}
