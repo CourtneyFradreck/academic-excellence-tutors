@@ -132,4 +132,9 @@ footer {
   .subjects{
     width: auto;
   }
+  .second{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+  }
 }
