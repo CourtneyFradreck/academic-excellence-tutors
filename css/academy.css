@@ -104,20 +104,6 @@
 
 
 
-/*must do the responsiveness*/
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -131,3 +117,19 @@ footer {
     color: #fff;
     font-family: "Roboto", arial;
   }
+
+
+
+@media all and (max-width: 500px){
+  nav{
+    justify-content: flex-end;
+  }
+  .diand{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+  }
+  .subjects{
+    width: auto;
+  }
+}
