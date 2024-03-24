@@ -102,6 +102,18 @@ button {
   font-weight: bold;
   cursor: pointer;
 }
+
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #1f2937;
+  color: #fff;
+  font-family: "Roboto", arial;
+}
 button:hover {
   box-shadow: 0 0 5px var(--text-color), 0 0 25px var(--text-color),
     0 0 50px var(--text-color), 0 0 100px var(--text-color),
