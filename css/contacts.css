@@ -66,3 +66,61 @@
   .menu_link:hover::after {
     width: 100%;
   }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    width: 48%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+input, textarea {
+  outline: none;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 15px;
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--main-color);
+  border: 2px solid var(--text-color);
+}
+button {
+  box-shadow: 0 0 5px var(--text-color), 0 0 25px var(--text-color);
+  width: 150px;
+  height: 45px;
+  background-color: var(--text-color);
+  border-radius: 15px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #1f2937;
+  color: #fff;
+  font-family: "Roboto", arial;
+}
+button:hover {
+  box-shadow: 0 0 5px var(--text-color), 0 0 25px var(--text-color),
+    0 0 50px var(--text-color), 0 0 100px var(--text-color),
+    0 0 200px var(--text-color);
+}
+@media all and (max-width: 500px){
+  .description{
+    width: auto;
+  }
+}
