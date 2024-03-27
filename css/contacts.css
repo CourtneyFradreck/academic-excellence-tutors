@@ -102,6 +102,15 @@ button {
   font-weight: bold;
   cursor: pointer;
 }
+button:hover {
+  box-shadow: 0 0 5px var(--text-color), 0 0 25px var(--text-color),
+    0 0 50px var(--text-color), 0 0 100px var(--text-color),
+    0 0 200px var(--text-color);
+}
+section{
+  display: flex;
+}
+
 
 
 
@@ -114,11 +123,7 @@ footer {
   color: #fff;
   font-family: "Roboto", arial;
 }
-button:hover {
-  box-shadow: 0 0 5px var(--text-color), 0 0 25px var(--text-color),
-    0 0 50px var(--text-color), 0 0 100px var(--text-color),
-    0 0 200px var(--text-color);
-}
+
 @media all and (max-width: 500px){
   .description{
     width: auto;
