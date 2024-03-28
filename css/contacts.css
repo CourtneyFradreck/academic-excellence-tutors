@@ -110,7 +110,10 @@ button:hover {
 section{
   display: flex;
 }
-
+div#socials {
+  margin: 20px;
+  padding: 20px;
+}
 
 
 
@@ -127,5 +130,11 @@ footer {
 @media all and (max-width: 500px){
   .description{
     width: auto;
+  }
+  section{
+    flex-direction: column;
+  }
+  nav{
+    flex-direction: row-reverse;
   }
 }
