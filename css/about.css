@@ -101,10 +101,13 @@ footer {
   }
   .boardMembers{
     width: 80%;
-    padding: 20px;
-    margin: 0 auto;
+    padding: 0px;
+    margin: 0;
   }
   nav{
     flex-direction: row-reverse;
+  }
+  .sectionTwo{
+    align-items: flex-start;
   }
 }
