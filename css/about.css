@@ -104,8 +104,11 @@ footer {
     padding: 0px;
     margin: 0;
   }
-  nav{
-    flex-direction: row-reverse;
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
   }
   .sectionTwo{
     align-items: flex-start;
