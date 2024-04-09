@@ -59,7 +59,8 @@
                   <input
                     id="mobileNumber"
                     type="number"
-                    placeholder="Enter mobile number" oninput="check(this)"
+                    placeholder="Enter mobile number"
+                    oninput="check(this)"
                     required
                   />
                 </div>
@@ -71,27 +72,36 @@
                     placeholder="Enter your school"
                     required
                   />
-                </div><br>                <div class="input-field ">
+                </div>
+                <br />
+                <div class="input-field">
                   <div class="gender">
-                    <label for="gender">Gender</label>
+                    <label for="gender" id="gender">Gender</label>
+                    <div id="genders">
+                      <div class="genders">
+                        <input
+                          id="gender"
+                          type="radio"
+                          value="female"
+                          required
+                          name="gender"
+                        />
+                        <label for="female"> female </label>
+                      </div>
 
-                  <label class="gender">
-                    <input
-                      id="gender"
-                      type="radio"
-                      value="female"
-                      required
-                      name="gender"
-                    />
-                    female
-                  </label>
-
-                  <label class="gender">
-                    <input id="gender" type="radio" value="male" required name="gender" />
-                    male
-                  </label>
-                  </div> 
-                </div> 
+                      <div class="genders">
+                        <input
+                          id="gender"
+                          type="radio"
+                          value="male"
+                          required
+                          name="gender"
+                        />
+                        <label for="male"> male </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <!-- <label for="grade">Grade:</label>
                 <select id="grade" name="grade" required>
                   <option value="">Select your Grade</option>
