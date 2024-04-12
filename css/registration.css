@@ -160,6 +160,23 @@ button {
 .input-field input {
   padding: 10px;
 }
+.toggle-button {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 21px;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: var(--text-color);
+  border-radius: 10px;
+}
+
 @media only screen and (max-width: 700px) {
   .container form .fields {
     display: block;
@@ -182,6 +199,39 @@ button {
   }
   #logo {
     display: none;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  ul.navbar {
+    flex-direction: column;
+    display: none;
+    height: 100%;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+  ul {
+    margin: 0;
+  }
+  /* .navbar li {
+    text-align: center;
+  }
+*/
+  ul.navbar.active {
+    display: block;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
