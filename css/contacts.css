@@ -177,6 +177,9 @@ footer {
     align-items: center;
     justify-content: center;
   }
+  #logo {
+    display: none;
+  }
   .description{
     width: auto;
   }

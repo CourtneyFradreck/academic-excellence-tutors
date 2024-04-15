@@ -169,6 +169,9 @@ footer {
     align-items: center;
     justify-content: center;
   }
+  #logo {
+    display: none;
+  }
   .diand{
     flex-wrap: wrap;
     flex-direction: column;
