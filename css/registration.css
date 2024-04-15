@@ -203,11 +203,10 @@ button {
   .toggle-button {
     display: flex;
   }
-  ul.navbar {
-    flex-direction: column;
+  nav.navbar {
     display: none;
-    height: 100%;
   }
+  
   nav {
     flex-direction: column;
     align-items: flex-start;
