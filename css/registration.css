@@ -187,6 +187,11 @@ button {
   #close-btn{
     display: block;
   }
+  #close-btn {
+    color: red;
+    cursor: pointer;
+    text-decoration: underline;
+  }
   .container {
     padding: 20px;
     margin-top: 0;

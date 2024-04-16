@@ -153,6 +153,11 @@ footer {
   #close-btn{
     display: block;
   }
+  #close-btn {
+    color: red;
+    cursor: pointer;
+    text-decoration: underline;
+  }
   ul.navbar {
     flex-direction: column;
     display: none;
