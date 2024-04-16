@@ -133,6 +133,9 @@ footer {
     background-color: var(--text-color);
     border-radius: 10px;
   }
+  #close-btn{
+    display: none;
+  }
 
 
 @media all and (max-width: 500px){
