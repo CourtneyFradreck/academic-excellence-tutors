@@ -145,6 +145,33 @@ footer {
 #close-btn{
   display: none;
 }
+#thank_you_popup h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#wrapper {
+  background-color: rgba(0, 0, 0, 0.719);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#thank_you_popup {
+  text-align: center;
+  width: max(300px, 30%);
+  height: fit-content;
+  padding: 10px;
+  background-color: var(--main-color);
+  border-radius: 20px;
+}
 
 @media all and (max-width: 500px){
   .toggle-button {

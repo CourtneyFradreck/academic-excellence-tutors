@@ -15,3 +15,15 @@ const navBar = document.getElementsByClassName('navbar')[0];
 toggleButton.addEventListener('click', () => {
   navBar.classList.toggle('active');
 });
+const form = document.getElementById('form');
+const close_popup_btn = document.getElementById('close_popup_btn');
+const popup_wrapper = document.getElementById('wrapper');
+
+close_popup_btn.addEventListener('click', () => {
+  popup_wrapper.style.display = 'none';
+});
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  popup_wrapper.style.display = 'flex';
+}, false);
