@@ -150,6 +150,9 @@ footer {
   .toggle-button {
     display: flex;
   }
+  #close-btn{
+    display: block;
+  }
   ul.navbar {
     flex-direction: column;
     display: none;

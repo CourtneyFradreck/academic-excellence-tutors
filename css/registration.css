@@ -184,6 +184,9 @@ button {
   .container form .fields {
     display: block;
   }
+  #close-btn{
+    display: block;
+  }
   .container {
     padding: 20px;
     margin-top: 0;
