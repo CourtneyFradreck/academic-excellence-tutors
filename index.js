@@ -27,3 +27,34 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
   popup_wrapper.style.display = 'flex';
 }, false);
+
+
+
+form.addEventListener('submit', async (event) => {
+  event.preventDefault();
+
+  // Collect form data
+  const formData = new FormData(form);
+
+  // Prepare data to send to server
+  const requestData = {
+    method: 'POST',
+    body: formData
+  };
+
+  try {
+    // Send form data to server
+    const response = await fetch('process_form.php', requestData);
+    if (response.ok) {
+      // Show thank you message if form is successfully submitted
+      popup_wrapper.style.display = 'flex';
+      // You can also reset the form if needed
+      form.reset();
+    } else {
+      console.error('Error submitting form:', response.statusText);
+    }
+  } catch (error) {
+    console.error('Error submitting form:', error);
+  }
+}, false);
+
