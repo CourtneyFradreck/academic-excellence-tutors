@@ -169,7 +169,7 @@ footer {
   width: max(300px, 30%);
   height: fit-content;
   padding: 10px;
-  background-color: var(--main-color);
+  background-color: var(--bg-color);
   border-radius: 20px;
 }
 
