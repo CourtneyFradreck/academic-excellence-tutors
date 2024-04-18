@@ -6,6 +6,24 @@ function check(mobileNumber) {
     mobileNumber.setCustomValidity('');
   }
 }
+document.getElementById("nextBtn").addEventListener("click", function(event) {
+  event.preventDefault(); // Prevent form submission
+  
+  // Get values of input fields
+  var motherName = document.getElementById("motherName").value.trim();
+  var fatherName = document.getElementById("fatherName").value.trim();
+  var guardianName = document.getElementById("guardianName").value.trim();
+  
+  // Check if at least one field is filled
+  if (motherName === "" && fatherName === "" && guardianName === "") {
+    alert("Please fill in at least one parent/guardian field.");
+    return false;
+  }
+  
+  // If at least one field is filled, allow form submission
+  document.getElementById("parentForm").submit();
+});
+
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
 const closebtn = document.getElementById('close-btn');
 closebtn.addEventListener('click', () => {
