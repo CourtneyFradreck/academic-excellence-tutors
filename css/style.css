@@ -182,14 +182,12 @@ ul li a {
 }
 
 body div.joinUs button {
-  box-shadow: 0 0 5px var(--text-color), 0 0 25px var(--text-color);
+  box-shadow: 0 0 5px var(--accent), 0 0 25px var(--accent);
   width: 150px;
   height: 45px;
   background-color: var(--text-color);
   border-radius: 15px;
-  border-color: var(--accent);
   margin-top: 20px;
-  border: #fff;
 }
 
 body div.joinUs button:hover {
