@@ -1,3 +1,4 @@
+//mobile number validation
 let mobileNumber = document.getElementById('mobileNumber');
 function check(mobileNumber) {
   if (mobileNumber.value.length < 10) {
@@ -10,9 +11,9 @@ document.getElementById("nextBtn").addEventListener("click", function(event) {
   event.preventDefault(); // Prevent form submission
   
   // Get values of input fields
-  var motherName = document.getElementById("motherName").value.trim();
-  var fatherName = document.getElementById("fatherName").value.trim();
-  var guardianName = document.getElementById("guardianName").value.trim();
+  let motherName = document.getElementById("motherName").value.trim();
+  let fatherName = document.getElementById("fatherName").value.trim();
+  let guardianName = document.getElementById("guardianName").value.trim();
   
   // Check if at least one field is filled
   if (motherName === "" && fatherName === "" && guardianName === "") {
@@ -24,15 +25,20 @@ document.getElementById("nextBtn").addEventListener("click", function(event) {
   document.getElementById("parentForm").submit();
 });
 
+
+//hamburger
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
 const closebtn = document.getElementById('close-btn');
+const navBar = document.getElementsByClassName('navbar')[0]; // Define navBar globally
+
 closebtn.addEventListener('click', () => {
   navBar.classList.toggle('active');
 });
-const navBar = document.getElementsByClassName('navbar')[0];
+
 toggleButton.addEventListener('click', () => {
   navBar.classList.toggle('active');
 });
+
 const form = document.getElementById('form');
 const close_popup_btn = document.getElementById('close_popup_btn');
 const popup_wrapper = document.getElementById('wrapper');
