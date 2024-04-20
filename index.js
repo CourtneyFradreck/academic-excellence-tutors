@@ -6,9 +6,9 @@ function check(mobileNumber) {
   } else {
     mobileNumber.setCustomValidity('');
   }
-}
+}/*
 document.getElementById("nextBtn").addEventListener("click", function(event) {
-  event.preventDefault(); // Prevent form submission
+  event.preventDefault(); // Prevent form submission*
   
   // Get values of input fields
   let motherName = document.getElementById("motherName").value.trim();
@@ -24,7 +24,7 @@ document.getElementById("nextBtn").addEventListener("click", function(event) {
   // If at least one field is filled, allow form submission
   document.getElementById("parentForm").submit();
 });
-
+*/
 
 //hamburger
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
@@ -38,7 +38,7 @@ closebtn.addEventListener('click', () => {
 toggleButton.addEventListener('click', () => {
   navBar.classList.toggle('active');
 });
-
+/*
 const form = document.getElementById('form');
 const close_popup_btn = document.getElementById('close_popup_btn');
 const popup_wrapper = document.getElementById('wrapper');
@@ -81,4 +81,4 @@ form.addEventListener('submit', async (event) => {
     console.error('Error submitting form:', error);
   }
 }, false);
-
+*/
