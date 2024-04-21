@@ -42,7 +42,7 @@ document.getElementById("nextBtn").addEventListener("click", function(event) {
 
 const form = document.getElementById('form');
 const close_popup_btn = document.getElementById('close_popup_btn');
-const popup_wrapper = document.getElementById('wrapper');
+const popup_wrapper = document.getElementById('popup_wrapper');
 
 close_popup_btn.addEventListener('click', () => {
   popup_wrapper.style.display = 'none';
