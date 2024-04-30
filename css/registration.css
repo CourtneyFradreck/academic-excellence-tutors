@@ -224,6 +224,7 @@ button {
     position: fixed;
     width: 100%;
     z-index: 10;
+    padding: 2px;
   }
   ul {
     margin: 0;
