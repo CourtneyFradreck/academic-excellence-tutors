@@ -150,16 +150,15 @@ footer {
     align-items: flex-start;
     position: fixed;
     width: 100%;
+    height: 100%;
     z-index: 10;
   }
   ul {
     margin: 0;
   }
   ul.navbar.active {
-    display: block;
     background-color: white;
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
