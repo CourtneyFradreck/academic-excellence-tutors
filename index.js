@@ -40,6 +40,8 @@ document.getElementById("nextBtn").addEventListener("click", function(event) {
   document.getElementById("parentForm").submit();
 });
 
+
+//code to show the thank_you_popup function
 const form = document.getElementById('form');
 const close_popup_btn = document.getElementById('close_popup_btn');
 const popup_wrapper = document.getElementById('popup_wrapper');
