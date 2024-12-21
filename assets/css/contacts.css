@@ -1,92 +1,93 @@
 :root {
-    --text-color: #2c8cdb;
-    --bg-color: #171a21;
-    --accent: #fafaff;
-  }
-  
-  html {
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    width: 100%;
-    max-width: 1900px;
-    color: var(--text-color);
-    position: relative;
-    margin: 0;
-    background-color: var(--bg-color);
-  }
-  .wrapper {
-    width: 80%;
-    padding: 20px;
-    margin: 0 auto;
-  }
-  nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  ul.navbar {
-    display: flex;
-    list-style-type: none;
-    gap: 30px;
-    width: max-content;
-  }
-  
-  ul li a {
-    text-decoration: none;
-    color: var(--text-color);
-  }
-  
-  #logo {
-    background-image: url("../images/AET\ Logo.jpg");
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .menu_link::after {
-    content: "";
-    width: 0;
-    background-color: var(--text-color);
-    display: block;
-    height: 3px;
-    transition: width 0.3s ease;
-  }
-  .menu_link:hover::after {
-    width: 100%;
-  }
+  --text-color: #2c8cdb;
+  --bg-color: #171a21;
+  --accent: #fafaff;
+}
 
-  .description {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 20px;
-    padding: 20px;
-    width: fit-content;
+html {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  max-width: 1900px;
+  color: var(--text-color);
+  position: relative;
+  margin: 0;
+  background-color: var(--bg-color);
+}
+.wrapper {
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul.navbar {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+  width: max-content;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+#logo {
+  background-image: url("../images/logo.png");
+  width: 180px;
+  height: 70px;
+  filter: invert(34%) sepia(100%) saturate(748%) hue-rotate(176deg)
+    brightness(95%) contrast(101%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.menu_link::after {
+  content: "";
+  width: 0;
+  background-color: var(--text-color);
+  display: block;
+  height: 3px;
+  transition: width 0.3s ease;
+}
+.menu_link:hover::after {
+  width: 100%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 20px;
+  width: fit-content;
 }
 form {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-input, textarea {
+input,
+textarea {
   outline: none;
   padding: 10px;
   font-size: 1rem;
   border-radius: 15px;
   color: var(--text-color);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: var(--main-color);
   border: 2px solid var(--text-color);
 }
@@ -107,15 +108,13 @@ button:hover {
     0 0 50px var(--text-color), 0 0 100px var(--text-color),
     0 0 200px var(--text-color);
 }
-section{
+section {
   display: flex;
 }
 div#socials {
   margin: 20px;
   padding: 20px;
 }
-
-
 
 footer {
   display: flex;
@@ -142,7 +141,7 @@ footer {
   background-color: var(--text-color);
   border-radius: 10px;
 }
-#close-btn{
+#close-btn {
   display: none;
 }
 #thank_you_popup h4 {
@@ -173,11 +172,11 @@ footer {
   border-radius: 20px;
 }
 
-@media all and (max-width: 500px){
+@media all and (max-width: 500px) {
   .toggle-button {
     display: flex;
   }
-  #close-btn{
+  #close-btn {
     display: block;
   }
   #close-btn {
@@ -212,10 +211,10 @@ footer {
   #logo {
     display: none;
   }
-  .description{
+  .description {
     width: auto;
   }
-  section{
+  section {
     flex-direction: column;
   }
   .wrapper {
