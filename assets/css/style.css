@@ -5,7 +5,7 @@
 }
 
 html {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -38,7 +38,8 @@ button {
 }
 button:hover {
   box-shadow: 0 0 5px var(--text-color), 0 0 25px var(--text-color),
-    0 0 50px var(--text-color), 0 0 100px var(--text-color), 0 0 200px var(--text-color);
+    0 0 50px var(--text-color), 0 0 100px var(--text-color),
+    0 0 200px var(--text-color);
 }
 
 .wrapper {
@@ -49,7 +50,7 @@ button:hover {
   margin: 0 auto;
   padding: 20px;
 }
-.cta-wrapper{
+.cta-wrapper {
   width: 100%;
   padding: 20px;
   margin: 0 auto;
@@ -79,17 +80,17 @@ ul li a {
 }
 
 #logo {
-  background-image: url('../images/AET\ Logo.jpg');
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-position: center;
+  background-image: url("../images/logo.png");
+  width: 180px;
+  height: 70px;
+  filter: invert(34%) sepia(100%) saturate(748%) hue-rotate(176deg)
+    brightness(95%) contrast(101%);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .menu_link::after {
-  content: '';
+  content: "";
   width: 0;
   background-color: var(--text-color);
   display: block;
@@ -111,7 +112,7 @@ ul li a {
   margin: 20px;
   background-size: cover;
   background-position: center;
-  background-image: url('../images/learner.gif');
+  background-image: url("../images/learner.gif");
 }
 
 .hero_main_text {
@@ -159,7 +160,9 @@ ul li a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--text-color); /*to be removed as soon as they're pictures added*/
+  background-color: var(
+    --text-color
+  ); /*to be removed as soon as they're pictures added*/
 }
 
 .item {
@@ -191,8 +194,8 @@ body div.joinUs button {
 }
 
 body div.joinUs button:hover {
-  box-shadow: 0 0 5px var(--accent), 0 0 25px var(--accent), 0 0 50px var(--accent),
-    0 0 100px var(--accent), 0 0 200px var(--accent);
+  box-shadow: 0 0 5px var(--accent), 0 0 25px var(--accent),
+    0 0 50px var(--accent), 0 0 100px var(--accent), 0 0 200px var(--accent);
 }
 
 footer {
@@ -202,7 +205,7 @@ footer {
   height: 100px;
   background-color: #1f2937;
   color: #fff;
-  font-family: 'Roboto', arial;
+  font-family: "Roboto", arial;
 }
 .thePricingSection {
   margin: 20px;
@@ -248,11 +251,11 @@ footer {
   background-color: var(--text-color);
   border-radius: 10px;
 }
-#close-btn{
+#close-btn {
   display: none;
 }
 @media only screen and (max-width: 1159px) {
-  .wrapper{
+  .wrapper {
     width: auto;
     padding: 10px;
   }
@@ -262,7 +265,7 @@ footer {
   ul.navbar {
     display: none;
   }
-  
+
   nav {
     flex-direction: column;
     align-items: flex-start;
@@ -326,22 +329,40 @@ footer {
     width: calc(100% - 5 * var(--offset));
   }
   .plan:nth-of-type(0) {
-    transform: translate(calc((0 - 1) * var(--offset)), calc((0 - 1) * var(--offset)));
+    transform: translate(
+      calc((0 - 1) * var(--offset)),
+      calc((0 - 1) * var(--offset))
+    );
   }
   .plan:nth-of-type(1) {
-    transform: translate(calc((1 - 1) * var(--offset)), calc((1 - 1) * var(--offset)));
+    transform: translate(
+      calc((1 - 1) * var(--offset)),
+      calc((1 - 1) * var(--offset))
+    );
   }
   .plan:nth-of-type(2) {
-    transform: translate(calc((2 - 1) * var(--offset)), calc((2 - 1) * var(--offset)));
+    transform: translate(
+      calc((2 - 1) * var(--offset)),
+      calc((2 - 1) * var(--offset))
+    );
   }
   .plan:nth-of-type(3) {
-    transform: translate(calc((3 - 1) * var(--offset)), calc((3 - 1) * var(--offset)));
+    transform: translate(
+      calc((3 - 1) * var(--offset)),
+      calc((3 - 1) * var(--offset))
+    );
   }
   .plan:nth-of-type(4) {
-    transform: translate(calc((4 - 1) * var(--offset)), calc((4 - 1) * var(--offset)));
+    transform: translate(
+      calc((4 - 1) * var(--offset)),
+      calc((4 - 1) * var(--offset))
+    );
   }
   .plan:nth-of-type(5) {
-    transform: translate(calc((5 - 1) * var(--offset)), calc((5 - 1) * var(--offset)));
+    transform: translate(
+      calc((5 - 1) * var(--offset)),
+      calc((5 - 1) * var(--offset))
+    );
   }
 
   .joinUs {

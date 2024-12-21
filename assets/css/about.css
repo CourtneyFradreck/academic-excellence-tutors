@@ -1,31 +1,31 @@
 :root {
-    --text-color: #2c8cdb;
-    --bg-color: #171a21;
-    --accent: #fafaff;
-  }
-  * {
-    box-sizing: border-box;
-  }
-  html {
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
-  body {
-    width: 100%;
-    max-width: 1900px;
-    color: var(--text-color);
-    position: relative;
-    margin: 0;
-    background-color: var(--bg-color);
-  }
-  .wrapper {
-    width: 80%;
-    padding: 20px;
-    margin: 0 auto;
-  }
-  nav {
+  --text-color: #2c8cdb;
+  --bg-color: #171a21;
+  --accent: #fafaff;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  width: 100%;
+  max-width: 1900px;
+  color: var(--text-color);
+  position: relative;
+  margin: 0;
+  background-color: var(--bg-color);
+}
+.wrapper {
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+}
+nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -44,11 +44,11 @@ ul li a {
 }
 
 #logo {
-  background-image: url("../images/AET\ Logo.jpg");
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-position: center;
+  background-image: url("../images/logo.png");
+  width: 180px;
+  height: 70px;
+  filter: invert(34%) sepia(100%) saturate(748%) hue-rotate(176deg)
+    brightness(95%) contrast(101%);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -63,27 +63,26 @@ ul li a {
 .menu_link:hover::after {
   width: 100%;
 }
-p{
+p {
   font-size: 18px;
 }
-.sectionTwo{
+.sectionTwo {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
-.boardMembers{
+.boardMembers {
   display: flex;
   gap: 80px;
   flex-wrap: wrap;
 }
-img{
+img {
   width: 300px;
 }
-.boardMembers img{
-  border: 4px solid #3882F6;
+.boardMembers img {
+  border: 4px solid #3882f6;
   border-radius: 15px;
 }
 footer {
@@ -111,14 +110,14 @@ footer {
   background-color: var(--text-color);
   border-radius: 10px;
 }
-#close-btn{
+#close-btn {
   display: none;
 }
 @media only screen and (max-width: 700px) {
-  #logo{
+  #logo {
     display: none;
   }
-  #close-btn{
+  #close-btn {
     display: block;
   }
   #close-btn {
@@ -126,7 +125,7 @@ footer {
     cursor: pointer;
     text-decoration: underline;
   }
-  .boardMembers{
+  .boardMembers {
     width: 80%;
     padding: 0px;
     margin: 0;
@@ -150,15 +149,15 @@ footer {
   ul {
     margin: 0;
   }
-ul.navbar.active {
-  background-color: white;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-  .sectionTwo{
+  ul.navbar.active {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sectionTwo {
     align-items: flex-start;
   }
 }
