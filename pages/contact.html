@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
     <link rel="stylesheet" href="../assets/css/contacts.css">
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
 </head>
 <body>
     <div class="wrapper">
@@ -30,15 +31,15 @@
                 If you are interested in learning more about our educational programs or have any queries, we would be delighted to assist you. Please fill out the form below with your name, email, and a brief message about your inquiry. Our team will get back to you as soon as possible to provide the information you need. Thank you for visiting our school’s website and considering us for your educational needs.
               </p>
       
-              <form id="form">
-                <label for="name"></label>
+              <form id="form" method="post" action="../database/process_contact.php">
+                <label for="Name"></label>
                 <input type="text" name="Name" id="name" placeholder="Name" required />
-                <label for="email"></label>
+                <label for="Email"></label>
                 <input type="text" name="Email" id="" placeholder="Email Address" required />
                 <textarea
                   type="text"
-                  name=""
-                  id=""
+                  name="Message"
+                  id="Message"
                   placeholder="Message"
                   rows="5"
                   required
@@ -65,7 +66,7 @@
         <h4 id="thank_you">
           Thank you
           <img
-            src="../images/check.svg"
+            src="../assets/images/check.svg"
             alt=""
             srcset=""
             class="white"
