@@ -272,6 +272,7 @@ footer {
     position: fixed;
     width: 100%;
     z-index: 10;
+    background-color: #1f2937;
   }
   ul {
     margin: 0;
@@ -305,9 +306,6 @@ footer {
     flex-wrap: nowrap;
   }
 
-  #logo {
-    display: none;
-  }
   #plans {
     counter-reset: card;
     position: relative;
