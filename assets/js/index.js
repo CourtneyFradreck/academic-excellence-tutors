@@ -1,43 +1,23 @@
-//hamburger
-const toggleButton = document.getElementsByClassName('toggle-button')[0];
-const closebtn = document.getElementById('close-btn');
-const navBar = document.getElementsByClassName('navbar')[0]; // Define navBar globally
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.8.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.8.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
-closebtn.addEventListener('click', () => {
-  navBar.classList.toggle('active');
-});
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDVNpsQJ7uj7hxDmG6VNNpzFHJMhAh-WsY",
+    authDomain: "academic-excellence-tutors.firebaseapp.com",
+    projectId: "academic-excellence-tutors",
+    storageBucket: "academic-excellence-tutors.firebasestorage.app",
+    messagingSenderId: "244333691365",
+    appId: "1:244333691365:web:b1aa417eaadac8b656af0c",
+    measurementId: "G-T4LRYG90M3"
+  };
 
-toggleButton.addEventListener('click', () => {
-  navBar.classList.toggle('active');
-});
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
 
-//mobile number validation
-let mobileNumber = document.getElementById('mobileNumber');
-function check(mobileNumber) {
-  if (mobileNumber.value.length < 10) {
-    mobileNumber.setCustomValidity('Error: Mobile number should have 10 digits');
-  } else {
-    mobileNumber.setCustomValidity('');
-  }
-}
-
-
-document.getElementById("nextBtn").addEventListener("click", function(event) {
-  event.preventDefault(); // Prevent form submission*
-  
-  // Get values of input fields
-  let motherName = document.getElementById("motherName").value.trim();
-  let fatherName = document.getElementById("fatherName").value.trim();
-  let guardianName = document.getElementById("guardianName").value.trim();
-  
-  // Check if at least one field is filled
-  if (motherName === "" && fatherName === "" && guardianName === "") {
-    alert("Please fill in at least one parent/guardian field.");
-    return false;
-  }
-  
-  // If at least one field is filled, allow form submission
-  document.getElementById("parentForm").submit();
-});
-
-
+  console.log(firebase);

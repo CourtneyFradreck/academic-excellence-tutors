@@ -1,0 +1,24 @@
+{
+  "name": "academic-excellence-tutors",
+  "version": "1.0.0",
+  "description": "**Academic Excellence Tutors - ReadMe**",
+  "main": "index.hmtl",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CourtneyFradreck/academic-excellence-tutors.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/CourtneyFradreck/academic-excellence-tutors/issues"
+  },
+  "homepage": "https://github.com/CourtneyFradreck/academic-excellence-tutors#readme",
+  "dependencies": {
+    "firebase": "^11.8.1"
+  }
+}
