@@ -11,7 +11,6 @@
       rel="stylesheet"
     />
     <title>enrollmentform</title>
-    <script src="index.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
@@ -31,7 +30,7 @@
         </ul>
       </nav>
       <div class="container">
-        <form id="parentForm" action="#" method="get">
+        <form id="form" action="#" method="get">
           <div class="form_first">
             <div class="personal_details">
               <h1 class="title">Enrollment application</h1>
@@ -42,8 +41,8 @@
               <h3>Personal details</h3>
               <div class="fields">
                 <div class="input-field">
-                  <label id="name" for="name">Full Name</label>
-                  <input type="text" placeholder="Enter your name" required />
+                  <label for="name">Full Name</label>
+                  <input id="name" type="text" placeholder="Enter your name" required />
                 </div>
 
                 <div class="input-field">
@@ -67,7 +66,6 @@
                     id="mobileNumber"
                     type="number"
                     placeholder="Enter mobile number"
-                    oninput="check(this)"
                     required
                   />
                 </div>
@@ -165,7 +163,7 @@
               </div>
             </div>
 
-            <button  id="nextBtn" class="nextBtn">Next</button>
+            <button  type="submit" id="nextBtn" class="nextBtn">Next</button>
           </div>
         </form>
         <footer>
@@ -175,7 +173,7 @@
           >.
         </footer>
       </div>
-      <script src="../index.js"></script>
+      <script type="module" src="../assets/js/index.js"></script>
     </div>
   </body>
 </html>
