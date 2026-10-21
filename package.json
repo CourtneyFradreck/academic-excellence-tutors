@@ -1,10 +1,15 @@
 {
   "name": "academic-excellence-tutors",
-  "version": "1.0.0",
-  "description": "**Academic Excellence Tutors - ReadMe**",
-  "main": "index.html",
+  "version": "2.0.0",
+  "private": true,
+  "description": "The official Academic Excellence Tutors website — online tutoring for Grades 8–12.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0",
+    "lint": "eslint . --max-warnings 0",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "playwright test"
   },
   "repository": {
     "type": "git",
@@ -12,13 +17,31 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
   "type": "module",
   "bugs": {
     "url": "https://github.com/CourtneyFradreck/academic-excellence-tutors/issues"
   },
   "homepage": "https://github.com/CourtneyFradreck/academic-excellence-tutors#readme",
+  "engines": {
+    "node": ">=24 <25",
+    "npm": ">=11"
+  },
   "dependencies": {
-    "firebase": "^11.8.1"
+    "lucide-react": "1.61.0",
+    "next": "16.4.2",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@playwright/test": "1.64.1",
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "^24.0.0",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.2",
+    "tailwindcss": "4.3.3",
+    "typescript": "6.0.3"
   }
 }
